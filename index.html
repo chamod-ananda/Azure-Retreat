@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Retreat</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Azure Retreat</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Welcome to Azure Retreat</h1>
+        <p>Experience the best in comfort and luxury</p>
+        <a href="#rooms" class="btn btn-primary">Explore Rooms</a>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Rooms</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card room-card">
+              <img
+                src="/assets/images/DeluxeRoom.jpg"
+                class="card-img-top"
+                alt="Room 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Deluxe Room</h5>
+                <p class="card-text">
+                  Spacious and comfortable with a beautiful view.
+                </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card room-card">
+              <img
+                src="/assets/images/suiteRoom.jpg"
+                class="card-img-top"
+                alt="Room 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Suite Room</h5>
+                <p class="card-text">Luxurious suite with modern amenities.</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card room-card">
+              <img
+                src="/assets/images/familyRoom.jpg"
+                class="card-img-top"
+                alt="Room 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Family Room</h5>
+                <p class="card-text">Perfect for families with extra space.</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h3>24/7 Room Service</h3>
+            <p>Enjoy round-the-clock room service for your convenience.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>Free Wi-Fi</h3>
+            <p>Stay connected with high-speed internet access.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3>Spa & Wellness</h3>
+            <p>Relax and rejuvenate with our spa services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Azure Retreat. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

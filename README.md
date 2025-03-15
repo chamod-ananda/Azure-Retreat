@@ -24,5 +24,5 @@ Welcome to **Azure Retreat**, a responsive hotel website designed using **Bootst
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/azure-retreat.git
+   git clone https://github.com/chamod-ananda/Azure-Retreat.git
    ```
