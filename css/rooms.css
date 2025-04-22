@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding-top: 70px;
+}
+
+/* Typography and Layout */
+.accommodation,
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accommodation {
+  margin-top: 100px;
+  font-size: 15px;
+  font-family: "Lora", serif;
+}
+
+.head {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.super-para,
+.highlight {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #444;
+}
+
+.book-now-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.book-now-btn:hover {
+  background-color: #444;
+}
+
+/* Card Container */
+.card-continer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Room Feature Grid */
+.feature-box {
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.feature-text {
+  font-size: 1rem;
+  color: #444;
+}
+
+.no-border {
+  border: none !important;
+}
+
+/* Info Icons */
+.info-box {
+  padding: 10px;
+}
+
+.info-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Navbar Custom */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.book-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 10px;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.book-btn:hover {
+  background-color: black;
+  color: #b3a995;
+}
+
+#drop1:hover,
+#drop2:hover,
+#drop3:hover,
+#drop4:hover,
+#drop5:hover {
+  color: #110857;
+}
+
+/* =======================
+   RESPONSIVE STYLES
+======================= */
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .book-btn {
+    font-size: 16px;
+  }
+}
+
+/* Medium to Large Devices (Tablets to Laptops) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-left: 0 !important;
+  }
+
+  .about,
+  .immerse,
+  .most-jumeirah {
+    padding-left: 40px;
+    text-align: left;
+  }
+
+  .card-continer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 20px auto !important;
+  }
+
+  .carousel {
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .about,
+  .immerse,
+  .most-jumeirah {
+    font-size: 16px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .most-jumeirah {
+    font-size: 28px;
+  }
+
+  .services {
+    font-size: 16px;
+    margin-left: 0;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .book-btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .footer-title,
+  .footer-address,
+  .footer-contact,
+  .footer-email,
+  .footer-link {
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel {
+    width: 100% !important;
+    margin: 20px auto;
+  }
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Headings and Paragraphs */
+.accommodation {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-family: "Lora", serif;
+}
+
+.head {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.super-para {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.highlight {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px auto 30px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-left: 0 !important;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .container .row.g-3 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .super-para,
+  .highlight {
+    font-size: 0.95rem;
+  }
+
+  .head {
+    font-size: 1.8rem;
+  }
+
+  .accommodation {
+    font-size: 1rem;
+  }
+
+  .book-btn {
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .head {
+    font-size: 1.5rem;
+  }
+
+  .super-para,
+  .highlight {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
+}

@@ -9,11 +9,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/pages/superior-rooms.html" />
   </head>
   <body>
     <!-- Header / Navigation -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">AzureRetreat</a>
           <button
@@ -29,12 +30,70 @@
               <li class="nav-item">
                 <a class="nav-link active" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rooms.html">Rooms</a>
+
+              <!-- Rooms Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="roomsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Rooms
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="roomsDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/pages/superior-rooms.html"
+                      >Superior Rooms</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/delux-rooms.html"
+                      >Deluxe Rooms</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/premium-rooms.html"
+                      >Premium Rooms</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/executive-rooms.html"
+                      >Executive Rooms</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dining.html">Dining</a>
+
+              <!-- Dining Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="diningDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dining
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="diningDropdown">
+                  <li>
+                    <a class="dropdown-item" href="dining.html">Overview</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="restaurant.html"
+                      >Restaurant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="bar.html">Bar & Lounge</a>
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="spa.html">Spa</a>
               </li>
@@ -203,7 +262,9 @@
               <p class="card-text">
                 Discover our elegantly appointed rooms and suites
               </p>
-              <a href="rooms.html" class="btn btn-primary mt-auto"
+              <a
+                href="/pages/superior-rooms.html"
+                class="btn btn-primary mt-auto"
                 >View Rooms</a
               >
             </div>
@@ -261,7 +322,11 @@
             <h5>Quick Links</h5>
             <ul class="list-unstyled">
               <li><a href="index.html" class="text-white">Home</a></li>
-              <li><a href="rooms.html" class="text-white">Rooms</a></li>
+              <li>
+                <a href="/pages/superior-rooms.html" class="text-white"
+                  >Rooms</a
+                >
+              </li>
               <li><a href="dining.html" class="text-white">Dining</a></li>
               <li><a href="spa.html" class="text-white">Spa</a></li>
             </ul>
