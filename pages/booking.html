@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/rooms.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">AzureRetreat</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Home</a>
+              </li>
+
+              <!-- Rooms Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="roomsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Rooms
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="roomsDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/pages/superior-rooms.html"
+                      >Superior Rooms</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/delux-rooms.html"
+                      >Deluxe Rooms</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/premium-rooms.html"
+                      >Premium Rooms</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/executive-rooms.html"
+                      >Executive Rooms</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Dining Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="diningDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dining
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="diningDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/pages/room-service.html"
+                      >Room Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/restaurant.html"
+                      >Restaurant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/bar.html"
+                      >Bar & Lounge</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/spa.html">Spa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/booking.html">Booking</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mt-5 pt-5">
+      <h1 class="text-center">Book Your Stay</h1>
+      <form class="mt-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="checkin" class="form-label">Check-in Date</label>
+          <input type="date" class="form-control" id="checkin" required />
+        </div>
+        <div class="mb-3">
+          <label for="checkout" class="form-label">Check-out Date</label>
+          <input type="date" class="form-control" id="checkout" required />
+        </div>
+        <div class="mb-3">
+          <label for="roomType" class="form-label">Room Type</label>
+          <select class="form-select" id="roomType" required>
+            <option value="" disabled selected>Select a room type</option>
+            <option value="superior">Superior Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="premium">Premium Room</option>
+            <option value="executive">Executive Room</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="specialRequests" class="form-label"
+            >Special Requests</label
+          >
+          <textarea
+            class="form-control"
+            id="specialRequests"
+            rows="3"
+            placeholder="Any special requests or preferences?"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Book Now</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>AzureRetreat</h5>
+            <p>
+              123 Luxury Avenue<br />Paradise City, PC 12345<br />Phone: +94 76
+              156 8795
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="/index.html" class="text-white">Home</a></li>
+              <li>
+                <a href="/pages/premium-rooms.html" class="text-white">Rooms</a>
+              </li>
+              <li>
+                <a href="/pages/room-service.html" class="text-white">Dining</a>
+              </li>
+              <li><a href="spa.html" class="text-white">Spa</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Facebook</a></li>
+              <li><a href="#" class="text-white">Instagram</a></li>
+              <li><a href="#" class="text-white">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 AzureRetreat. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
